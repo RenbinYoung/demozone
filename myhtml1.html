@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">  <!--use utf-8 or GBK-->
+        <meta name="Mr.Young">
+        <link rel="shortcut icon" href="headImage.jpg">
+        <title>Mr.Young's html temp1</title><!--html name-->
+        <!--CSS-->
+        <style>/***only in CSS***/
+                /*body*/
+                body
+                {
+                        background-color:whitesmoke;
+                }
+                /*h*/
+                h1
+                {
+                        color:red;
+                        font-family: 'Times New Roman', Times, serif;
+                }
+                p.normal{font-style: normal;color: tomato;font-size: 50px;}
+                p.italic{font-style: italic;font-size: 30px;}
+                p.oblique{font-style: oblique;font-size: 1em;}
+                /*image*/
+                img.linghua{display: block;margin: auto;height:420px;width: 500px;}
+                /*element alignment*/
+                div.alignment{
+                        margin: 5em;
+                        width: 50em;
+                        border: 1em solid skyblue;
+                        padding: 2em;
+                }
+                div.test1{
+                        position: absolute;
+                        left: 1000px;top: 10px;
+                        width: 300px;
+                        background: rgb(35, 178, 197);
+                }
+                div p{
+                        background-color: green;
+                        width: 500px;
+                }
+                fieldset.PI{
+                        width: 500px;
+                }
+                /*navigation*/
+                ul{
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color:green;
+                        /* width:fit-content; */
+                }
+                li{float: left;color: green;}
+                /* a:link,a:visited{
+                        display: block;
+                        width: 120px;
+                        font-weight: bold;
+                        color: white;
+                        background-color:green;
+                        text-align: center;
+                        padding: 4px;
+                        text-decoration: none;
+                }
+                a:hover,a:active{
+                        background-color: darkgreen;
+                } */
+                li a{
+                        display: inline-block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                }
+                div.music a{
+                        display: inline-block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                }
+                li a:hover, div.music:hover, div.music-list{
+                        background-color: darkgreen;
+                }
+                div.music{
+                        display: inline-block;
+                }
+                div.music-cont{
+                        display: none;
+                        position: absolute;
+                        background-color: white;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px whitesmoke;
+                }
+                div.music-cont a{
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                }
+                div.music-cont a:hover {background-color:gainsboro;}
+                div.music:hover div.music-cont{
+                        display: block;
+                }
+                div.movie a{
+                        display: inline-block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                }
+                div.movie:hover, div.movie-list{
+                        background-color: darkgreen;
+                }
+                div.movie{
+                        display: inline-block;
+                }
+                div.movie-cont{
+                        display: none;
+                        position: absolute;
+                        background-color: white;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px whitesmoke;
+                }
+                div.movie-cont a{
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                }
+                div.movie-cont a:hover {background-color:gainsboro;}
+                div.movie:hover div.movie-cont{
+                        display: block;
+                }
+
+
+
+                
+        </style>
+</head>
+<body>
+        <a id="Top" href="#But">^But</a>
+        <hr><!--horizon line-->
+        <ul>
+                <li><a href="#home">Home</a></li>
+                <div class="music">
+                        <a href="#music" class="music-list">Music</a>
+                        <div class="music-cont">
+                                <a href="https://y.qq.com/">QQ Music</a>
+                                <a href="https://music.163.com/">NEC Music</a>
+                        </div>
+                </div>
+                <div class="movie">
+                        <a href="#movie" class="movie-list">Video</a>
+                        <div class="movie-cont">
+                                <a href="https://www.bilibili.com/">B Net</a>
+                                <a href="https://v.qq.com/">Tencent Video</a>
+                                <a href="https://www.iqiyi.com/">iQIYI Video</a>
+                        </div>
+                </div>
+                <li style="float:right;"><a href="#about">About</a></li>
+        </ul>
+        <h1> My first title</h1>
+        <font size='6'>test</font>
+        <hr><!--horizon line-->
+        <div>
+                <p>prograph in div</p>
+        </div>
+        <p class="normal">My first prograph</p>
+        <b>Size test</b><br>
+        <i>Size test</i><br>
+        <small>Size test</small><br>
+        Size<sup>test</sup><br>
+        <p class="italic">My second prograph</p>
+        <h1>My second title</h1>
+        <hr><!--horizon line-->
+        <pre><!--pre save the space and line feed-->
+                <font size='6'>
+                        You are not my priority any more
+                                    But she is
+                </font>
+        </pre>
+                
+        <bdo dir="rtl">This sentence shows from right to left</bdo>
+        <p>He said: <q>Buid your dream!</q>So the BYD was</p>
+        <p>The book is <cite>Weakness of human</cite></p>
+        <p><del>No</del><ins>Yes</ins>, I do.</p>
+
+        <!--image-->
+        <img class="linghua" src="Linghua.png"><br>
+         
+        <!--table-->
+        <table border="1"><!--show the line use "1"-->
+                <tr>
+                        <th>cell 1</th>
+                        <th>cell 2</th>
+                </tr>
+                <tr>
+                        <td>a11</td>
+                        <td>a12</td>
+                </tr>
+                <tr>
+                        <td>a21</td>
+                        <td>a22</td>
+                </tr>
+        </table>
+
+        <!--layout-->
+        <div class="test1">
+                <div id="menu" style="background-color: darkslategrey;color: darkgrey;height: 100px;width: 150px;float: left;">
+                HTML<br>
+                CSS<br>
+                JS</div>
+                <div id="content" style="background-color: darkslategrey;color: darkkhaki;height: 100px;width: 150px;float: left;">
+                        content</div>
+        </div>
+        <div><br><br><br><br><br><br><br><br><br></div>
+
+        <!--input and cooki-->
+        <form action="demo-form.php" method="get">
+                <input type="checkbox" name="vehicle" value="Bike">Bike<br>
+                <input type="checkbox" name="vehicle" value="Car">Car<br>
+                <input type="button" value="OK">
+        </form>
+        <form action="">
+                <!--Radio Buttons-->
+                <input type="radio" name="sex" value="male">Male<br>
+                <input type="radio" name="sex" value="female">Female<br>
+
+                <!--Checkboxes-->
+                <input type="checkbox" name="vehicle" value="Bike">Bike<br>
+                <input type="checkbox" name="vehicle" value="Car">Car<br>
+                
+                <!--Input box-->
+                <fieldset class="PI">
+                        <legend>Personal information:</legend>
+                        Username: <input type="text" name='user'><br>
+                        Password: <input type="password" name="password"><br>
+                </fieldset>
+
+                <!--Drop down list-->
+                <select name="cars" id="">
+                        <option value="volov">Volov</option>
+                        <option value="bwm">BWM</option>
+                        <option value="byd" selected>BYD</option>
+                        <option value="benz">Benz</option>
+                </select>
+                <br>
+
+                <!--text box-->
+                <textarea name="textbox" id="" cols="30" rows="10">
+                This is a text box.
+                </textarea>
+                <br>
+
+                <!--Button-->
+                <input type="button" value="OK">
+
+        </form>
+
+        <!--iframe-->
+        <iframe src="myhtml1.html" width="500" height="300" frameborder="0"></iframe>
+        <br>
+
+        <!--JavaScript-->
+        <script>
+                document.write("Hello HTML and JavaScript")
+        </script>
+        <noscript>Sorry, your browser doesn't support JavaScript</noscript>
+        <h1 id="test1">test1</h1>
+        <script>
+                function update()
+                {
+                        document.getElementById("test1").innerHTML="Neither the first choice nor the exception."
+                }
+        </script>
+        <button type="button" onclick="update()">Change</button>
+
+        <!---->
+        <div class="alignment">
+                <p>Good afternoon, everyone! I am your friend, Mr.Young.</p>
+        </div>
+
+        <!-- JavaScript -->
+        
+
+        <!--Address-->
+        <h1>Address</h1>
+        <address>
+                <font size='3'>
+                Written by Mr.Young<br>
+                Visit me at:<br>
+                https://renbinyoung.github.io/youngszone/myhtml1.html<br>
+                PCSemic, Bishan, Chongqing<br>
+                CHINA<br>
+                </font>
+        </address>
+
+        <!--Jump to somewhere use id-->
+        <a id="But" href="#Top" style="text-decoration: none;">^Top</a>
+</body>
+</html>
