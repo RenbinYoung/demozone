@@ -18,10 +18,17 @@
                         get1 = document.getElementById("demo");
                         get1.innerHTML = "My friend.";
                 }
+                function changeImage(){
+                        imgid = document.getElementById('bulbimg')
+                        if(imgid.src.match("bulbon")){
+                                imgid.src="pic_bulboff.gif"
+                        }else{
+                                imgid.src="pic_bulbon.gif"
+                        }
+                }
         </script>
-        <button type="button" onclick="demofunction()">Click</button>
-
-
+        <button type="button" onclick="demofunction()">Click</button><br>
+        <img loading="lazy" id = "bulbimg" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
 
 </body>
 </html>
